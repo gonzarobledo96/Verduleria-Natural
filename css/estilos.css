@@ -35,7 +35,6 @@
 
 
 
-
 p{
     font-family: 'Montserrat', sans-serif;
 }
@@ -80,8 +79,6 @@ p{
     border-radius: 0px 20px 20px 0px;
     transition: all 0.4s;
 }
-
-/* el HOVER hace la transicion de color cuando moves el raton a un texto o boton*/
 
 .btn1:hover {
     background-color: rgb(15, 123, 15);
@@ -164,9 +161,6 @@ p{
     color: white;
 }
     
-
-
-
 
 
 .container{

@@ -18,6 +18,7 @@
   font-size: 30px;
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
+  transition: 0.5s;
 }
 .float:hover {
   text-decoration: none;
@@ -119,7 +120,7 @@ p {
   background-color: rgb(255, 199, 88);
   border: solid 5px;
   border-color: rgb(255, 199, 88);
-  
+  transition: 0.5s;
   cursor: pointer;
 }
 .comprar {
@@ -129,7 +130,7 @@ p {
   background-color: rgb(147, 147, 147);
   border: solid 5px;
   border-color: rgb(147, 147, 147);
-  transition: 1s;
+  transition: 0.5s;
 }
 .combo-familiar{
   margin-left: 20%;
@@ -167,14 +168,13 @@ p {
 }
 .fruta {
   background-color: white;
-  /* box-shadow: 0px 0px 5px rgb(54, 70, 10); */
-    /* padding: 10px; */
     text-align: center;
     width: 200px;
     display: inline-block;
     margin-right: 1em;
     margin-bottom: 1em;
     border-radius: 20px 20px 20px 20px;
+    transition: 0.5s;
     border: solid transparent;
   }
 .fruta h3{
@@ -211,6 +211,7 @@ p {
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: 0.5s;
     font-family: "Montserrat", sans-serif;
   }
   .boton-carrito:hover {
@@ -273,6 +274,7 @@ p {
     margin-top: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    transition: 0.5s;
 }
 .boton-comprar:hover{
   background-color: rgb(34, 172, 6);
@@ -294,6 +296,7 @@ p {
     margin-top: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    transition: 0.5s;
 }
 .boton-vaciar:hover{
   background-color:  rgb(172, 161, 6);
@@ -330,6 +333,7 @@ background-attachment: fixed;
  border: 0px;
  border-radius: 20px 20px 20px 20px;
  font-weight: 600;
+ transition: 0.5s;
 }
 .boton-vinos:hover{
 color: white;

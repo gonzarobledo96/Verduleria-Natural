@@ -273,7 +273,7 @@ height: 50px;
   font-weight: 500;
 }
 .mbtn2:hover {
-  background-color:  rgb(172, 161, 6);
+  background-color: rgb(172, 161, 6);
   border: none;
   color: white;
 }
@@ -285,6 +285,7 @@ height: 50px;
   border: solid 5px ; 
   border-color: rgb(255, 255, 255);
   margin-top: 10px;
+  border-radius: 25px 25px 25px 25px;
 }
 .boton-imagen-principal.active {
   background-color:  rgb(197, 185, 10);
@@ -300,8 +301,6 @@ height: 50px;
   border-color:  rgb(197, 185, 10); 
   margin-top: 10px; 
 }
-
-
 
 
 /**********************/
@@ -537,6 +536,47 @@ transform: scale(1.1);
 }
 
 
+/*****************************/
+/*** ORGÁNICO CERTIFICADO ***/
+/***************************/
+#certificado {
+  /* establecer la altura máxima del contenedor para evitar que el contenido se desborde */
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.scroll-container {
+  /* establecer la altura del contenedor para que las imágenes se muestren en una sola línea */
+  height: 100%;
+  /* establecer un desplazamiento horizontal infinito */
+  animation-name: scroll-left;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.img-container {
+  display: flex;
+  /* ajustar el ancho del contenedor para que las imágenes no se desborden */
+  
+}
+
+.img-container img {
+  height: 100%;
+  /* añadir un margen a la derecha para separar las imágenes */
+  margin-right: 20px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
 /***************/
 /*** FOOTER ***/
 /*************/
@@ -629,7 +669,6 @@ transform: scale(1.1);
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  
 }
 .logos-contacto-footer a:hover{
   text-decoration: none;
@@ -637,3 +676,6 @@ transform: scale(1.1);
   font-weight: 500;
   color: rgb(228, 194, 0);
 }
+
+
+

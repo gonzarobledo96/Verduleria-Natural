@@ -58,7 +58,7 @@ function actualizarCarrito() {
     eliminarProductoButton.style.borderRadius = "10px";
     eliminarProductoButton.style.padding = "8px";
     eliminarProductoButton.style.fontFamily = "Montserrat, sans-serif";
-    ;
+    
     
     eliminarProductoButton.addEventListener("click", () =>
       eliminarDelCarrito(item)

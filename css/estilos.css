@@ -242,6 +242,14 @@ height: 50px;
 }
 
 
+
+
+
+
+
+
+
+
 /*******************************/
 /*** TEXTO IMAGEN PRINCIPAL ***/
 /*****************************/
@@ -256,6 +264,7 @@ height: 50px;
   transition: all 0.4s;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  margin-top: 40px;
 }
 .mbtn1:hover {
   background-color: rgb(255, 199, 88);
@@ -277,8 +286,6 @@ height: 50px;
   border: none;
   color: white;
 }
-
-
 .boton-imagen-principal.btn-separado {
   margin-right: 5%;
   background-color: rgb(255, 255, 255);
@@ -301,6 +308,20 @@ height: 50px;
   border-color:  rgb(197, 185, 10); 
   margin-top: 10px; 
 }
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
 
 
 /**********************/
@@ -678,4 +699,245 @@ transform: scale(1.1);
 }
 
 
+
+/* *********************/
+/* seccion R E S P O N S I V E */
+/* *********************/
+
+@media screen and (min-width: 931px) and (max-width: 1200px) {
+
+    
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 930px) {
+
+}
+   
+
+
+
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+}
+
+
+
+@media screen and (min-width:481px) and (max-width: 576px) {
+   
+}
+
+
+
+@media screen and (min-width:320px) and (max-width: 480px) {
+/**********************************/
+/*** Envío gratis desde $6.000 ***/
+/********************************/
+.fondo-Envío-gratis-desde-6000 p{
+  padding: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  color: white;
+}
+
+/***********************/
+/*** COMBO FAMILIAR ***/
+/*********************/
+.logo-frutas{
+  font-size: 10px;
+}
+
+/******************************************/
+/*** IMAGENES PRINCIPALES DE LA PAGINA ***/
+/****************************************/
+  .mbtn1 {
+    height: 15px;
+    width: 25%;
+    outline: none;
+    border: none;
+    color: white;
+    background-color:  rgb(94, 128, 0);
+    border-radius: 50px;
+    transition: all 0.4s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 5px;
+    margin-top: -3em;
+  }
+  .mbtn1:hover {
+    background-color: rgb(255, 199, 88);
+  }
+  .mbtn2 {
+    height: 15px;
+    width: 25%;
+    outline: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(94, 128, 0);
+    border-radius: 50px;
+    transition: all 0.4s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 5px;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-20%);
+  }
+.carousel-caption p,h1{
+  font-size: 6px;
+}
+.boton-imagen-principal.btn-separado {
+  margin-right: 5%;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px ; 
+  border-color: rgb(255, 255, 255);
+  border-radius: 25px 25px 25px 25px;
+}
+.boton-imagen-principal.active {
+  background-color:  rgb(197, 185, 10);
+  border: solid 1px;
+  border-color:  rgb(197, 185, 10); 
+  border-radius: 25px 25px 25px 25px;
+  transition: 0.5s;
+}
+.boton-imagen-principal:hover {
+  background-color: rgb(197, 185, 10);
+  border: solid 5px;
+  border-color:  rgb(197, 185, 10); 
+}
+
+/*****************************/
+/*** DISEÑO-LISTA-COMPRAS ***/
+/***************************/
+.fruta {
+   background-color: white;
+   text-align: center;
+   width: 60px;
+   display: inline-block;
+   border-radius: 10px 10px 10px 10px;
+   transition: 0.5s;
+   border: 2px solid transparent;
+ }
+.fruta h3{
+ font-family: "Montserrat", sans-serif;
+ font-weight: 600;
+ font-size: 8px;
+}
+.fruta p {
+ font-family: "Montserrat", sans-serif;
+ font-size: 6px;
+ margin-bottom: -5px;
+}
+.fruta:hover{
+ transition: 0.20s;
+   transform: scale(1.03);
+   border: 1px;
+   border: solid rgb(94, 128, 0);
+}
+ .fruta img {
+   width: 100%;
+   height: auto;
+   margin-bottom: 10px;
+   border-radius: 8px 8px 0px 0px;
+ }
+
+/******************************/
+/*** BOTON AGREGAR CARRITO ***/
+/****************************/
+  .boton-carrito {
+    background-color: rgb(94, 128, 0);
+    color: white;
+    padding: 2px 7px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+    font-size: 4px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .boton-carrito:hover {
+    font-size: 4px;
+    background-color: rgb(172, 161, 6);
+    color: white;
+    padding: 1px 6px;
+    border-radius: 2px 2px 2px 2px;
+    border: none;
+    cursor: pointer;
+    transition: 0.20s;
+    transform: scale(1.10);
+  }
+
+/*******************************/
+  /*** DISEÑO-CARRITO-COMPRAS ***/
+  /*****************************/
+  .carrito {
+    margin-right: 0px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: rgb(167, 167, 167);
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 8px 8px 8px 8px;
+    padding: 5px;
+    width: 30%;
+  }
+.carrito h2 {
+  background-color: rgb(94, 128, 0);
+  border-radius: 8px 8px 0px 0px;
+  padding: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+.precio{
+  font-family: "Montserrat", sans-serif;
+  
+  color: rgb(56, 56, 56);
+}
+.lista-productos{
+  font-family: "Montserrat", sans-serif;
+  color: rgb(56, 56, 56);
+  font-size: 18px;
+}
+.resumen-de-compra {
+  font-size: 6px;
+  color: white;
+}
+.boton-comprar{
+    font-size: 6px;
+}
+.boton-vaciar{
+  background-color: rgb(129, 83, 36);
+  color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+    font-size: 6px;
+}
+.boton-vaciar:hover{
+  background-color:  rgb(172, 161, 6);
+  transition: 0.25s;
+  transform: scale(1.0);
+  border-radius: 10px 10px 10px 10px;
+}
+li {
+  margin-left: -4em;
+  list-style-type: none;
+  font-size: 8px;
+  font-weight: 600;
+  border-bottom: 2px solid rgb(201, 200, 200);
+}
+
+
+
+
+
+}
 

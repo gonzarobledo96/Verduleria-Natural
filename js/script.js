@@ -47,16 +47,16 @@ function actualizarCarrito() {
     } : $${item.precioTotal.toFixed(2)}`;
 
     // Agregamos un botón de eliminar al producto
-    let eliminarProductoButton = document.createElement("button");
+    let eliminarProductoButton = document.createElement("buttonn");
     eliminarProductoButton.textContent = "Eliminar";
     eliminarProductoButton.style.backgroundColor = " rgb(94, 128, 0)"; //cambiar el color de fondo delbotón
     eliminarProductoButton.style.color = "white"; // cambiar el color de texto del botón
-    eliminarProductoButton.style.fontSize = "14px"; // cambiar el tamaño de fuente del botón
+    eliminarProductoButton.style.fontSize = "1em"; // cambiar el tamaño de fuente del botón
     eliminarProductoButton.style.marginTop = "0.5em";
     eliminarProductoButton.style.marginBottom = "1em";
     eliminarProductoButton.style.border = "0";
     eliminarProductoButton.style.borderRadius = "10px";
-    eliminarProductoButton.style.padding = "8px";
+    eliminarProductoButton.style.padding = "6px";
     eliminarProductoButton.style.fontFamily = "Montserrat, sans-serif";
     
     
@@ -95,9 +95,8 @@ function vaciarCarrito() {
 // DISEÑO DEL CARRITO
 // Obtener el elemento del total del carrito
 const totalCarrito = document.getElementById("total-carrito");
-
 // Establecer el tamaño de fuente a 20 píxeles
-totalCarrito.style.fontSize = "22px";
+totalCarrito.style.fontSize = "1.2rem;";
 totalCarrito.style.fontWeight = "bold";
 
 // evento al precionar el boton comprar genere alertas y se borre el valor agregado

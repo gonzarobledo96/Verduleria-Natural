@@ -191,6 +191,7 @@ p {
   color: rgb(172, 161, 6);
   transform: scale(1.05);
 }
+
 .bi-bag-check {
   font-size: 30px;
   color: black;
@@ -407,7 +408,6 @@ header h1{
   padding: 0px;
   transition: .3s;
   background-color: #ebebeb65;
-  
 }
 .contenedor-vinos .contenedor-items-vinos .item .img-item{
   width: 100%;
@@ -637,7 +637,6 @@ transform: scale(1.1);
   /* añadir un margen a la derecha para separar las imágenes */
   margin-right: 20px;
 }
-
 @keyframes scroll-left {
   0% {
     transform: translateX(0%);
@@ -705,7 +704,6 @@ transform: scale(1.1);
   max-height: 30px;
   max-width: 100%;
   transition: 0.5s;
-  
 }
 .logos-pagos img:hover{
   transform: scale(1.2);
@@ -734,7 +732,6 @@ transform: scale(1.1);
 .logos-contacto-footer:hover {
   transform: scale(1.2);
   transition: 1s;
-  
 }
 .logos-contacto-footer a{
   text-decoration: none;
@@ -749,9 +746,11 @@ transform: scale(1.1);
 }
 
 
-
-/* SECCION RESPONSIVE VINOS*/
-@media screen and (max-width: 850px) {/* (max-width: 850px) */
+  /* *********************/
+/* seccion R E S P O N S I V E */
+/* *********************/
+/* SECCION RESPONSIVE CARRITO*/
+@media screen and (max-width: 959px) {/* (max-width: 850px) */
   .contenedor-vinos {
     display: block;
   }
@@ -762,10 +761,64 @@ transform: scale(1.1);
       width: 100%;
   }
 }
-  /* *********************/
-/* seccion R E S P O N S I V E */
-/* *********************/
+@media screen and (min-width: 1094px) and (max-width: 1199px){
+    /****************************/
+/*** BARRA DE NAVEGACION ***/
+/**************************/
+.nav-item a {
+  font-size:14px;
+}
+  .contenedor-vinos .contenedor-items-vinos .item{
+    max-width: 250px;
+  }
+  /* seccion carrito */
+.carrito-vinos{
+  margin-left: 2%;
+}
+.carrito-vinos .carrito-item{
+  padding: 10px;
+}
+.carrito-vinos .carrito-item img{
+  margin-right: 20px;
+}
+.carrito-vinos .carrito-item .carrito-item-titulo{
+  font-size: 15px;
+}
+.carrito-vinos .carrito-item .selector-cantidad{
+  display: flex;
+  margin-right: 40px;
+}
+.carrito-vinos .carrito-item .carrito-item-cantidad{
+  font-size: 18px;
+  width:50px;
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  font-size: 22px;
+  margin-top: 1em;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 28%;
+  font-size: 20px;
+}
+.carrito-total .fila{
+  font-size: 18px;
+}
+.carrito-total .btn-pagar{
+  font-size: 20px;
+}
+.contenedor-vinos .contenedor-items-vinos .item{
+  max-width: 250px;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+}
 @media screen and (min-width: 1060px) and (max-width: 1094px){
+    /****************************/
+/*** BARRA DE NAVEGACION ***/
+/**************************/
+.nav-item a {
+  font-size:14px;
+}
 /******************************************/
     /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
     /****************************************/
@@ -774,7 +827,6 @@ transform: scale(1.1);
       top: 20%;
       transform: translateY(-20%);
     }
-
   /*************************/
 /*** SECCION DE TIENDA ***/
 /***********************/
@@ -793,9 +845,49 @@ transform: scale(1.1);
   border-radius: 15px;
   margin-left: 5%;
 }
+/* seccion carrito */
+.carrito-vinos{
+  margin-left: 2%;
 }
-
+.carrito-vinos .carrito-item{
+  padding: 10px;
+}
+.carrito-vinos .carrito-item img{
+  margin-right: 20px;
+}
+.carrito-vinos .carrito-item .carrito-item-titulo{
+  font-size: 15px;
+}
+.carrito-vinos .carrito-item .selector-cantidad{
+  display: flex;
+  margin-right: 40px;
+}
+.carrito-vinos .carrito-item .carrito-item-cantidad{
+  font-size: 18px;
+  width:50px;
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  font-size: 22px;
+  margin-top: 1em;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 32%;
+  font-size: 20px;
+}
+.carrito-total .fila{
+  font-size: 18px;
+}
+.carrito-total .btn-pagar{
+  font-size: 20px;
+}
+}
 @media screen and (min-width: 960px) and (max-width: 1059px){
+  /****************************/
+/*** BARRA DE NAVEGACION ***/
+/**************************/
+  .nav-item a {
+    font-size:14px;
+  }
   /******************************************/
     /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
     /****************************************/
@@ -804,7 +896,6 @@ transform: scale(1.1);
       top: 20%;
       transform: translateY(-20%);
     }
-
   /*************************/
 /*** SECCION DE TIENDA ***/
 /***********************/
@@ -823,8 +914,42 @@ transform: scale(1.1);
   border-radius: 15px;
   margin-left: 5%;
 }
+/* seccion carrito */
+.carrito-vinos{
+  margin-left: 2%;
 }
-
+.carrito-vinos .carrito-item{
+  padding: 10px;
+}
+.carrito-vinos .carrito-item img{
+  margin-right: 20px;
+}
+.carrito-vinos .carrito-item .carrito-item-titulo{
+  font-size: 15px;
+}
+.carrito-vinos .carrito-item .selector-cantidad{
+  display: flex;
+  margin-right: 40px;
+}
+.carrito-vinos .carrito-item .carrito-item-cantidad{
+  font-size: 18px;
+  width:50px;
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  font-size: 22px;
+  margin-top: 1em;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 32%;
+  font-size: 20px;
+}
+.carrito-total .fila{
+  font-size: 18px;
+}
+.carrito-total .btn-pagar{
+  font-size: 20px;
+}
+}
 @media screen and (min-width: 810px) and (max-width: 959px){
   /******************************************/
     /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
@@ -842,7 +967,7 @@ transform: scale(1.1);
   margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  grid-gap:10px;
+  grid-gap:6px;
   grid-row-gap: 30px;
   width: 100%;
   transition: .3s;
@@ -852,8 +977,42 @@ transform: scale(1.1);
   border-radius: 15px;
   margin-left: 5%;
 }
+  /* seccion carrito */
+  .carrito-vinos{
+    margin-left: 0;
+  }
+  .carrito-vinos .carrito-item{
+    padding: 10px;
+  }
+  .carrito-vinos .carrito-item img{
+    margin-right: 20px;
+  }
+  .carrito-vinos .carrito-item .carrito-item-titulo{
+    font-size: 15px;
+  }
+  .carrito-vinos .carrito-item .selector-cantidad{
+    display: flex;
+    margin-right: 40px;
+  }
+  .carrito-vinos .carrito-item .carrito-item-cantidad{
+    font-size: 18px;
+    width:50px;
+  }
+  .carrito-vinos .carrito-item .carrito-item-precio{
+    font-size: 22px;
+    margin-top: 1em;
+  }
+  .carrito-vinos .carrito-item .btn-eliminar{
+    margin-top: 5%;
+    font-size: 20px;
+  }
+  .carrito-total .fila{
+    font-size: 20px;
+  }
+  .carrito-total .btn-pagar{
+    font-size: 22px;
+  }
 }
-
 @media screen and (min-width: 768px) and (max-width: 809px){
 /******************************************/
     /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
@@ -901,11 +1060,13 @@ transform: scale(1.1);
 .contenedor-vinos .contenedor-items-vinos .item .boton-item{
   font-size: 14px;
 }
-
+.carrito-vinos .carrito-item .carrito-item-precio{
+  display:inline-block;
 }
-
-
-
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 5%;
+}
+}
 @media screen and (min-width: 640px) and (max-width: 767px){
     /***********************/
     /*** COMBO FAMILIAR ***/
@@ -1006,6 +1167,12 @@ transform: scale(1.1);
   padding: 5px 15px;
   border-radius: 5px;
 }
+.carrito-vinos .carrito-item .carrito-item-precio{
+  display:inline-block;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 5%;
+}
     /**************/
     /*** VINOS ***/
     /************/
@@ -1065,7 +1232,6 @@ transform: scale(1.1);
       font-size: 10px;
     }
 }
-
 @media screen and (min-width: 580px) and (max-width: 639px){
     /***********************/
     /*** COMBO FAMILIAR ***/
@@ -1157,7 +1323,6 @@ transform: scale(1.1);
   font-size: 14px;
 }
 .contenedor-vinos .contenedor-items-vinos .item .precio-item{
-  
   font-size: 16px;
 }
 .contenedor-vinos .contenedor-items-vinos .item .boton-item{
@@ -1165,7 +1330,12 @@ transform: scale(1.1);
   margin: 10px auto;
   padding: 5px 15px;
   border-radius: 5px;
-  
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  display:inline-block;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 10%;
 }
     /**************/
     /*** VINOS ***/
@@ -1226,7 +1396,6 @@ transform: scale(1.1);
       font-size: 10px;
     }
 }
-
 @media screen and (min-width:470px) and (max-width: 579px){
    
     /***********************/
@@ -1327,6 +1496,12 @@ transform: scale(1.1);
   padding: 5px 15px;
   border-radius: 5px;
 }
+.carrito-vinos .carrito-item .carrito-item-precio{
+  display:inline-block;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 10%;
+}
     /**************/
     /*** VINOS ***/
     /************/
@@ -1386,7 +1561,6 @@ transform: scale(1.1);
       font-size: 10px;
     }
 }
-
 @media screen and (min-width:320px) and (max-width: 469px){
  /**********************************/
     /*** Envío gratis desde $6.000 ***/
@@ -1480,18 +1654,19 @@ transform: scale(1.1);
   font-size: 10px;
 }
 .contenedor-vinos .contenedor-items-vinos .item .precio-item{
-  
   font-size: 16px;
 }
 .contenedor-vinos .contenedor-items-vinos .item .boton-item{
   font-size: 10px;
- 
   margin: 10px auto;
-  
-  
   padding: 5px 15px;
   border-radius: 5px;
-  
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  display:flex;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 10%;
 }
     /**************/
     /*** VINOS ***/

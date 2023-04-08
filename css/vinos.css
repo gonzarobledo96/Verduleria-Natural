@@ -288,7 +288,7 @@ height: 50px;
 .boton-imagen-principal.active {
   background-color:  rgb(197, 185, 10);
   border: solid 5px;
-  border-color:  rgb(197, 185, 10); 
+  border-color: rgb(197, 185, 10); 
   margin-top: 10px;
   border-radius: 25px 25px 25px 25px;
   transition: 0.5s;

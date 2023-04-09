@@ -212,8 +212,14 @@ p {
 .imagen-logo-navbar{
 height: 50px;
 }
-
-
+.dropdown-menu {
+  overflow: hidden;
+}
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+  background-color: rgb(197, 181, 170);
+  color: #ffffff;
+}
 /* LOGOS NABVAR */
 .posicion-logos-navbar{
   display: flex;
@@ -325,6 +331,7 @@ height: 50px;
   padding-left: 20%;
   padding-right: 20%;
   margin-bottom: 25px;
+  padding-top: 8%;
 }
 
 
@@ -335,7 +342,7 @@ header{
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.425) 100%, rgb(0, 0, 0) 100%),url("../imagenes/vinos/vinos-fondo.jpg");
   background-size: cover;
   background-position:center;
-  height: 300px;
+  height: 250px;
   margin-top: 2em;
 }
 header h1{
@@ -358,14 +365,14 @@ header h1{
 .contenedor-vinos .contenedor-items-vinos{
   margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
-  grid-gap:0px;
-  grid-row-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap:20px;
+  grid-row-gap: 40px;
   width: 100%;
   transition: .3s;
 }
 .contenedor-vinos .contenedor-items-vinos .item{
-  max-width: 200px;
+  max-width: 300px;
   border-radius: 10px;
   padding: 0px;
   transition: .3s;
@@ -379,11 +386,11 @@ header h1{
   opacity: 1;
   transition: 0.3s;
 }
-
 .contenedor-vinos .contenedor-items-vinos .item .titulo-item{
-  font-size: 12PX;
+  padding: 6px;
+  font-size: 16px;
   display: block;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
@@ -394,22 +401,22 @@ header h1{
   font-weight: bold;
   font-size: 22px;
 }
-
 .contenedor-vinos .contenedor-items-vinos .item .boton-item{
   display: block;
   margin: 10px auto;
   border: none;
   background-color:  rgb(0, 0, 0);
   color: #fff;
-  padding: 5px 15px;
+  padding: 10px 50px;
   border-radius: 5px;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
+  
 }
 /* seccion carrito */
 .carrito-vinos{
   border: 2px solid rgb(197, 181, 170);
-  width: 35%;
+  width: 40%;
   margin-top: 30px;
   border-radius: 10px;
   overflow: hidden;
@@ -417,6 +424,7 @@ header h1{
   position: sticky !important;
   top: 0;
   transition: .3s;
+  margin-left: 2%;
   /* Estilos para ocultar */
   margin-right: -100%;
   opacity: 0;
@@ -443,6 +451,7 @@ header h1{
   font-weight: bold;
   margin-bottom: 10px;
   text-transform: uppercase;
+  font-size: 12px;
 }
 .carrito-vinos .carrito-item .selector-cantidad{
   display: inline-block;
@@ -474,7 +483,7 @@ header h1{
   margin-bottom: 5px;
 }
 .carrito-vinos .carrito-item .btn-eliminar{
-  margin-top: 15%;
+  margin-top: 20%;
   position: absolute;
   right: 15px;
   top: 15px;
@@ -494,7 +503,6 @@ header h1{
 .carrito-vinos .carrito-item .btn-eliminar i{
   pointer-events: none;
 }
-
 .carrito-total{
   background-color: #f3f3f3;
   padding: 30px;
@@ -708,12 +716,12 @@ transform: scale(1.1);
 }
 
 
+
   /* *********************/
 /* seccion R E S P O N S I V E */
 /* *********************/
-
-/* SECCION RESPONSIVE VINOS*/
-@media screen and (max-width: 850px) {
+/* SECCION RESPONSIVE CARRITO*/
+@media screen and (max-width: 959px) {/* (max-width: 850px) */
   .contenedor-vinos {
     display: block;
   }
@@ -724,25 +732,1067 @@ transform: scale(1.1);
       width: 100%;
   }
 }
-
-
-
-@media screen and (min-width: 931px) and (max-width: 1100px){
-
+@media screen and (min-width: 1094px) and (max-width: 1199px){
+    /****************************/
+/*** BARRA DE NAVEGACION ***/
+/**************************/
+/* SECCION CONTENEDOR DE ITEMS */
+.contenedor-vinos .contenedor-items-vinos .item .boton-item{
+  font-size: 14px;
 }
-
-@media screen and (min-width: 769px) and (max-width: 930px){
-
+.nav-item a {
+  font-size:14px;
 }
-
-@media screen and (min-width: 577px) and (max-width: 768px){
-
+  .contenedor-vinos .contenedor-items-vinos .item{
+    max-width: 250px;
+  }
+  /* seccion carrito */
+.carrito-vinos{
+  margin-left: 2%;
 }
-
-@media screen and (min-width:481px) and (max-width: 576px){
-
+.carrito-vinos .carrito-item{
+  padding: 10px;
 }
-
-@media screen and (min-width:320px) and (max-width: 480px){
-
+.carrito-vinos .carrito-item img{
+  margin-right: 20px;
+}
+.carrito-vinos .carrito-item .carrito-item-titulo{
+  font-size: 15px;
+}
+.carrito-vinos .carrito-item .selector-cantidad{
+  display: flex;
+  margin-right: 40px;
+}
+.carrito-vinos .carrito-item .carrito-item-cantidad{
+  font-size: 18px;
+  width:50px;
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  font-size: 22px;
+  margin-top: 1em;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 28%;
+  font-size: 20px;
+}
+.carrito-total .fila{
+  font-size: 18px;
+}
+.carrito-total .btn-pagar{
+  font-size: 20px;
+}
+.contenedor-vinos .contenedor-items-vinos .item{
+  max-width: 250px;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+/*************************/
+    /*** SECCION DE VINOS ***/
+    /***********************/
+    header{
+      height: 230px;
+    }
+    .parrafo-tienda{
+      padding-top: 7%;
+      font-size: 1em;
+    }
+}
+@media screen and (min-width: 1060px) and (max-width: 1094px){
+  /* SECCION CONTENEDOR DE ITEMS */
+.contenedor-vinos .contenedor-items-vinos .item .boton-item{
+  font-size: 14px;
+}
+    /****************************/
+/*** BARRA DE NAVEGACION ***/
+/**************************/
+.nav-item a {
+  font-size:14px;
+}
+/******************************************/
+    /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
+    /****************************************/
+    .carousel-caption {
+      position: absolute;
+      top: 20%;
+      transform: translateY(-20%);
+    }
+  /*************************/
+/*** SECCION DE TIENDA ***/
+/***********************/
+/* SECCION CONTENEDOR DE ITEMS */
+.contenedor-vinos .contenedor-items-vinos{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap:10px;
+  grid-row-gap: 30px;
+  width: 100%;
+  transition: .3s;
+}
+.contenedor-vinos .contenedor-items-vinos .item{
+  max-width: 350px;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+/* seccion carrito */
+.carrito-vinos{
+  margin-left: 2%;
+}
+.carrito-vinos .carrito-item{
+  padding: 10px;
+}
+.carrito-vinos .carrito-item img{
+  margin-right: 20px;
+}
+.carrito-vinos .carrito-item .carrito-item-titulo{
+  font-size: 15px;
+}
+.carrito-vinos .carrito-item .selector-cantidad{
+  display: flex;
+  margin-right: 40px;
+}
+.carrito-vinos .carrito-item .carrito-item-cantidad{
+  font-size: 18px;
+  width:50px;
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  font-size: 22px;
+  margin-top: 1em;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 32%;
+  font-size: 20px;
+}
+.carrito-total .fila{
+  font-size: 18px;
+}
+.carrito-total .btn-pagar{
+  font-size: 20px;
+}
+/*************************/
+    /*** SECCION DE VINOS ***/
+    /***********************/
+    header{
+      height: 210px;
+    }
+}
+@media screen and (min-width: 960px) and (max-width: 1059px){
+   /* SECCION CONTENEDOR DE ITEMS */
+.contenedor-vinos .contenedor-items-vinos .item .boton-item{
+  font-size: 11px;
+}
+  /****************************/
+/*** BARRA DE NAVEGACION ***/
+/**************************/
+  .nav-item a {
+    font-size:14px;
+  }
+  /******************************************/
+    /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
+    /****************************************/
+    .carousel-caption {
+      position: absolute;
+      top: 20%;
+      transform: translateY(-20%);
+    }
+  /*************************/
+/*** SECCION DE TIENDA ***/
+/***********************/
+/* SECCION CONTENEDOR DE ITEMS */
+.contenedor-vinos .contenedor-items-vinos{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap:10px;
+  grid-row-gap: 30px;
+  width: 100%;
+  transition: .3s;
+}
+.contenedor-vinos .contenedor-items-vinos .item .titulo-item{
+  font-size: 14px;
+}
+.contenedor-vinos .contenedor-items-vinos .item{
+  max-width: 300px;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+/* seccion carrito */
+.carrito-vinos{
+  margin-left: 2%;
+}
+.carrito-vinos .carrito-item{
+  padding: 10px;
+}
+.carrito-vinos .carrito-item img{
+  margin-right: 20px;
+}
+.carrito-vinos .carrito-item .carrito-item-titulo{
+  font-size: 15px;
+}
+.carrito-vinos .carrito-item .selector-cantidad{
+  display: flex;
+  margin-right: 40px;
+}
+.carrito-vinos .carrito-item .carrito-item-cantidad{
+  font-size: 18px;
+  width:50px;
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  font-size: 22px;
+  margin-top: 1em;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 40%;
+  font-size: 20px;
+}
+.carrito-total .fila{
+  font-size: 18px;
+}
+.carrito-total .btn-pagar{
+  font-size: 20px;
+}
+/*************************/
+    /*** SECCION DE VINOS ***/
+    /***********************/
+    header{
+      height: 200px;
+    }
+    .parrafo-tienda{
+      padding-top: 7%;
+      font-size: 14px;
+    }
+}
+@media screen and (min-width: 810px) and (max-width: 959px){
+  /******************************************/
+    /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
+    /****************************************/
+    .carousel-caption {
+      position: absolute;
+      top: 20%;
+      transform: translateY(-20%);
+    }
+  /*************************/
+/*** SECCION DE TIENDA ***/
+/***********************/
+/* SECCION CONTENEDOR DE ITEMS */
+.contenedor-vinos .contenedor-items-vinos{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap:6px;
+  grid-row-gap: 30px;
+  width: 100%;
+  transition: .3s;
+}
+.contenedor-vinos .contenedor-items-vinos .item{
+  max-width: 300px;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+  /* seccion carrito */
+  .carrito-vinos{
+    margin-left: 0;
+  }
+  .carrito-vinos .carrito-item{
+    padding: 10px;
+  }
+  .carrito-vinos .carrito-item img{
+    margin-right: 20px;
+  }
+  .contenedor-vinos .contenedor-items-vinos .item .titulo-item{
+    font-size: 12px;
+  }
+  .contenedor-vinos .contenedor-items-vinos .item .boton-item{
+    padding: 10px 40px;
+    font-size: 10px;
+  }
+  .carrito-vinos .carrito-item .selector-cantidad{
+    display: flex;
+    margin-right: 40px;
+  }
+  .carrito-vinos .carrito-item .carrito-item-cantidad{
+    font-size: 18px;
+    width:50px;
+  }
+  .carrito-vinos .carrito-item .carrito-item-precio{
+    font-size: 22px;
+    margin-top: 1em;
+  }
+  .carrito-vinos .carrito-item .btn-eliminar{
+    margin-top: 5%;
+    font-size: 20px;
+  }
+  .carrito-total .fila{
+    font-size: 20px;
+  }
+  .carrito-total .btn-pagar{
+    font-size: 22px;
+  }
+  /*************************/
+    /*** SECCION DE VINOS ***/
+    /***********************/
+    header{
+      height: 160px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 809px){
+/******************************************/
+    /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
+    /****************************************/
+    .mbtn1 {
+      height: 30px;
+      width: 30%;
+      border-radius: 50px;
+      font-size: 12px;
+      margin-top: 2em;
+    }
+    .mbtn2 {
+      height: 30px;
+      width: 30%;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    .carousel-caption {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-20%);
+    }
+  .carousel-caption p,h1{
+    font-size: 1em;
+  }
+  
+  /*************************/
+/*** SECCION DE TIENDA ***/
+/***********************/
+/* SECCION CONTENEDOR DE ITEMS */
+.contenedor-vinos .contenedor-items-vinos{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap:10px;
+  grid-row-gap: 30px;
+  width: 100%;
+  transition: .3s;
+}
+.contenedor-vinos .contenedor-items-vinos .item .titulo-item{
+  padding: 6px;
+  font-size: 12px;
+}
+.contenedor-vinos .contenedor-items-vinos .item{
+  max-width: 300px;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+.contenedor-vinos .contenedor-items-vinos .item .boton-item{
+  padding: 10px 35px;
+  font-size: 10px;
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  display:inline-block;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 5%;
+}
+   /*************************/
+    /*** SECCION DE VINOS ***/
+    /***********************/
+    header{
+      height: 150px;
+    }
+    .parrafo-tienda{
+      padding-top: 7%;
+      font-size: 10px;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 767px){
+    /***********************/
+    /*** COMBO FAMILIAR ***/
+    /*********************/
+    .logo-frutas{
+      font-size: 13px;
+    }
+    /**********************/
+    /*** BOTON COMPRAR ***/
+    /********************/
+    .combo-familiar{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    /******************************/
+    /*** DISEÑO PARRAFO TIENDA ***/
+    /****************************/
+    .tiendaComboFamiliar-marginTop{
+      margin-top: 2em;
+    }
+    .tienda-fondo{
+      height: auto;
+    }
+    /******************************************/
+    /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
+    /****************************************/
+      .mbtn1 {
+        height: 25px;
+        width: 30%;
+        border-radius: 50px;
+        font-size: 10px;
+        margin-top: 2em;
+      }
+      .mbtn2 {
+        height: 25px;
+        width: 30%;
+        font-weight: 500;
+        font-size: 10px;
+      }
+      .carousel-caption {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-20%);
+      }
+    .carousel-caption p,h1{
+      font-size: 15px;
+    }
+    .boton-imagen-principal.btn-separado {
+      margin-right: 5%;
+      background-color: rgb(255, 255, 255);
+      border: solid 1px ; 
+      border-color: rgb(255, 255, 255);
+      border-radius: 25px 25px 25px 25px;
+    }
+    .boton-imagen-principal.active {
+      background-color:  rgb(197, 185, 10);
+      border: solid 1px;
+      border-color:  rgb(197, 185, 10); 
+      border-radius: 25px 25px 25px 25px;
+    }
+    .boton-imagen-principal:hover {
+      background-color: rgb(197, 185, 10);
+      border: solid 5px;
+      border-color:  rgb(197, 185, 10); 
+    }
+/*************************/
+/*** SECCION DE TIENDA ***/
+/***********************/
+/* SECCION CONTENEDOR DE ITEMS */
+.contenedor-vinos .contenedor-items-vinos{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap:10px;
+  grid-row-gap: 30px;
+  width: 100%;
+  transition: .3s;
+}
+.contenedor-vinos .contenedor-items-vinos .item{
+  max-width: 300px;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+.contenedor-vinos .contenedor-items-vinos .item .titulo-item{
+  font-size: 14px;
+}
+.contenedor-vinos .contenedor-items-vinos .item .precio-item{
+  
+  font-size: 16px;
+}
+.contenedor-vinos .contenedor-items-vinos .item .boton-item{
+  font-size: 16px;
+  margin: 10px auto;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  display:inline-block;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 5%;
+}
+    /**************/
+    /*** VINOS ***/
+    /************/
+    .vinos h1{
+      color: white;
+      font-size: 2em;
+    }
+    .boton-vinos{
+     font-size: 14px;
+    }
+    /*****************************/
+    /*** ORGÁNICO CERTIFICADO ***/
+    /***************************/
+    #certificado {
+      max-height: 400px;
+    }
+    /***************/
+    /*** FOOTER ***/
+    /*************/
+    .fondo-footer p{
+      margin-top: 1em;
+    }
+    .logos-contacto-footer {
+      color:  rgb(94, 128, 0) ;
+      font-size: 1em;
+      transition: 0.5s ;
+    }
+    .logos-contacto-footer:hover {
+      transform: scale(1.2);
+      transition: 1s;
+    }
+    .logos-contacto-footer a{
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+    }
+    .logos-contacto-footer a:hover{
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: rgb(228, 194, 0);
+    }
+    .titulo-medios {
+      margin-right: 0em;
+    }
+    .logos-pagos img {
+      margin-top: 10px;
+    }
+    .fondoCopyright{
+      margin-bottom: -17px;
+      padding-top: 10px;
+      padding-bottom: 2px;
+    }
+    .fondoCopyright p{
+    margin-left: 2%;
+    margin-right: 2%;
+      font-size: 10px;
+    }
+      /*************************/
+    /*** SECCION DE VINOS ***/
+    /***********************/
+    header{
+      height: 120px;
+    }
+    .parrafo-tienda{
+      padding-top: 6%;
+      font-size: 10px;
+    }
+}
+@media screen and (min-width: 580px) and (max-width: 639px){
+    /***********************/
+    /*** COMBO FAMILIAR ***/
+    /*********************/
+    .logo-frutas{
+      font-size: 13px;
+    }
+    /**********************/
+    /*** BOTON COMPRAR ***/
+    /********************/
+    .combo-familiar{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    /******************************/
+    /*** DISEÑO PARRAFO TIENDA ***/
+    /****************************/
+    .tiendaComboFamiliar-marginTop{
+      margin-top: 2em;
+    }
+    .tienda-fondo{
+      height: auto;
+    }
+    /******************************************/
+    /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
+    /****************************************/
+      .mbtn1 {
+        height: 22px;
+        width: 30%;
+        border-radius: 50px;
+        font-size: 12px;
+        margin-top: 2em;
+      }
+      .mbtn2 {
+        height: 22px;
+        width: 30%;
+        font-weight: 500;
+        font-size: 12px;
+      }
+      .carousel-caption {
+        position: absolute;
+        top: 33%;
+        transform: translateY(-20%);
+      }
+    .carousel-caption p,h1{
+      font-size: 1em;
+    }
+    .boton-imagen-principal.btn-separado {
+      margin-right: 5%;
+      background-color: rgb(255, 255, 255);
+      border: solid 1px ; 
+      border-color: rgb(255, 255, 255);
+      border-radius: 25px 25px 25px 25px;
+    }
+    .boton-imagen-principal.active {
+      background-color:  rgb(197, 185, 10);
+      border: solid 1px;
+      border-color:  rgb(197, 185, 10); 
+      border-radius: 25px 25px 25px 25px;
+    }
+    .boton-imagen-principal:hover {
+      background-color: rgb(197, 185, 10);
+      border: solid 5px;
+      border-color:  rgb(197, 185, 10); 
+    }
+/*************************/
+/*** SECCION DE TIENDA ***/
+/***********************/
+/* SECCION CONTENEDOR DE ITEMS */
+.contenedor-vinos .contenedor-items-vinos{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap:10px;
+  grid-row-gap: 30px;
+  width: 100%;
+  transition: .3s;
+}
+.contenedor-vinos .contenedor-items-vinos .item{
+  max-width: 260px;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+.contenedor-vinos .contenedor-items-vinos .item .titulo-item{
+  font-size: 14px;
+}
+.contenedor-vinos .contenedor-items-vinos .item .precio-item{
+  font-size: 16px;
+}
+.contenedor-vinos .contenedor-items-vinos .item .boton-item{
+  font-size: 16px;
+  margin: 10px auto;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  display:inline-block;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 10%;
+}
+    /**************/
+    /*** VINOS ***/
+    /************/
+    .vinos h1{
+      color: white;
+      font-size: 2em;
+    }
+    .boton-vinos{
+     font-size: 10px;
+    }
+    /*****************************/
+    /*** ORGÁNICO CERTIFICADO ***/
+    /***************************/
+    #certificado {
+      max-height: 400px;
+    }
+    /***************/
+    /*** FOOTER ***/
+    /*************/
+    .fondo-footer p{
+      margin-top: 1em;
+    }
+    .logos-contacto-footer {
+      color:  rgb(94, 128, 0) ;
+      font-size: 1em;
+      transition: 0.5s ;
+    }
+    .logos-contacto-footer:hover {
+      transform: scale(1.2);
+      transition: 1s;
+    }
+    .logos-contacto-footer a{
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+    }
+    .logos-contacto-footer a:hover{
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: rgb(228, 194, 0);
+    }
+    .titulo-medios {
+      margin-right: 0em;
+    }
+    .logos-pagos img {
+      margin-top: 10px;
+    }
+    .fondoCopyright{
+      margin-bottom: -17px;
+      padding-top: 10px;
+      padding-bottom: 2px;
+    }
+    .fondoCopyright p{
+    margin-left: 2%;
+    margin-right: 2%;
+      font-size: 10px;
+    }
+      /*************************/
+    /*** SECCION DE VINOS ***/
+    /***********************/
+    header{
+      height: 130px;
+    }
+    .parrafo-tienda{
+      padding-top: 7%;
+      font-size: 10px;
+    }
+}
+@media screen and (min-width:470px) and (max-width: 579px){
+   
+    /***********************/
+    /*** COMBO FAMILIAR ***/
+    /*********************/
+    .logo-frutas{
+      font-size: 13px;
+    }
+    /**********************/
+    /*** BOTON COMPRAR ***/
+    /********************/
+    .combo-familiar{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    /******************************/
+    /*** DISEÑO PARRAFO TIENDA ***/
+    /****************************/
+    .tiendaComboFamiliar-marginTop{
+      margin-top: 2em;
+    }
+    .tienda-fondo{
+      height: auto;
+    }
+    /******************************************/
+    /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
+    /****************************************/
+      .mbtn1 {
+        height: 20px;
+        width: 30%;
+        border-radius: 50px;
+        font-size: 10px;
+        margin-top: 2em;
+      }
+      .mbtn2 {
+        height: 20px;
+        width: 30%;
+        font-weight: 500;
+        font-size: 10px;
+      }
+      .carousel-caption {
+        position: absolute;
+        top: 27%;
+        transform: translateY(-20%);
+      }
+    .carousel-caption p,h1{
+      font-size: 12px;
+    }
+    .boton-imagen-principal.btn-separado {
+      margin-right: 5%;
+      background-color: rgb(255, 255, 255);
+      border: solid 1px ; 
+      border-color: rgb(255, 255, 255);
+      border-radius: 25px 25px 25px 25px;
+    }
+    .boton-imagen-principal.active {
+      background-color:  rgb(197, 185, 10);
+      border: solid 1px;
+      border-color:  rgb(197, 185, 10); 
+      border-radius: 25px 25px 25px 25px;
+    }
+    .boton-imagen-principal:hover {
+      background-color: rgb(197, 185, 10);
+      border: solid 5px;
+      border-color:  rgb(197, 185, 10); 
+    }
+/*************************/
+/*** SECCION DE TIENDA ***/
+/***********************/
+/* SECCION CONTENEDOR DE ITEMS */
+.contenedor-vinos .contenedor-items-vinos{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap:10px;
+  grid-row-gap: 20px;
+  width: 100%;
+  transition: .3s;
+}
+.contenedor-vinos .contenedor-items-vinos .item{
+  max-width: 210px;
+  border-radius: 15px;
+  margin-left: 10%;
+}
+.contenedor-vinos .contenedor-items-vinos .item .titulo-item{
+  font-size: 10px;
+}
+.contenedor-vinos .contenedor-items-vinos .item .precio-item{
+  font-size: 16px;
+}
+.contenedor-vinos .contenedor-items-vinos .item .boton-item{
+  font-size: 16px;
+  margin: 10px auto;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  display:inline-block;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 10%;
+}
+    /**************/
+    /*** VINOS ***/
+    /************/
+    .vinos h1{
+      color: white;
+      font-size: 2em;
+    }
+    .boton-vinos{
+     font-size: 10px;
+    }
+    /*****************************/
+    /*** ORGÁNICO CERTIFICADO ***/
+    /***************************/
+    #certificado {
+      max-height: 400px;
+    }
+    /***************/
+    /*** FOOTER ***/
+    /*************/
+    .fondo-footer p{
+      margin-top: 1em;
+    }
+    .logos-contacto-footer {
+      color:  rgb(94, 128, 0) ;
+      font-size: 1em;
+      transition: 0.5s ;
+    }
+    .logos-contacto-footer:hover {
+      transform: scale(1.2);
+      transition: 1s;
+    }
+    .logos-contacto-footer a{
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+    }
+    .logos-contacto-footer a:hover{
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: rgb(228, 194, 0);
+    }
+    .titulo-medios {
+      margin-right: 0em;
+    }
+    .logos-pagos img {
+      margin-top: 10px;
+    }
+    .fondoCopyright{
+      margin-bottom: -17px;
+      padding-top: 10px;
+      padding-bottom: 2px;
+    }
+    .fondoCopyright p{
+    margin-left: 2%;
+    margin-right: 2%;
+      font-size: 10px;
+    }
+      /*************************/
+    /*** SECCION DE VINOS ***/
+    /***********************/
+    header{
+      height: 80px;
+    }
+    .parrafo-tienda{
+      padding-left: 20%;
+      padding-right: 20%;
+      margin-bottom: 25px;
+      padding-top: 6%;
+      font-size: 6px;
+    }
+}
+@media screen and (min-width:320px) and (max-width: 469px){
+ /**********************************/
+    /*** Envío gratis desde $6.000 ***/
+    /********************************/
+    .fondo-Envío-gratis-desde-6000 p{
+      font-size: 12px;
+      color: white;
+    }
+    /***********************/
+    /*** COMBO FAMILIAR ***/
+    /*********************/
+    .logo-frutas{
+      font-size: 13px;
+    }
+    /**********************/
+    /*** BOTON COMPRAR ***/
+    /********************/
+    .combo-familiar{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    /******************************/
+    /*** DISEÑO PARRAFO TIENDA ***/
+    /****************************/
+    .tiendaComboFamiliar-marginTop{
+      margin-top: 2em;
+    }
+    .tienda-fondo{
+      height: auto;
+    }
+/*************************/
+    /*** SECCION DE VINOS ***/
+    /***********************/
+    header{
+      height: 60px;
+      margin-top: 2em;
+    }
+    .parrafo-tienda{
+      color: white;
+      padding-left: 20%;
+      padding-right: 20%;
+      margin-bottom: 25px;
+      padding-top: 6%;
+      font-size: 5px;
+    }
+    /******************************************/
+    /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
+    /****************************************/
+      .mbtn1 {
+        height: 18px;
+        width: 30%;
+        border-radius: 50px;
+        font-size: 10px;
+        margin-top: -3em;
+      }
+      .mbtn2 {
+        height: 18px;
+        width: 50%;
+        font-weight: 500;
+        font-size: 10px;
+      }
+      .carousel-caption {
+        position: absolute;
+        top: 15%;
+        transform: translateY(-20%);
+      }
+    .carousel-caption p,h1{
+      font-size: 10px;
+    }
+    .boton-imagen-principal.btn-separado {
+      margin-right: 5%;
+      background-color: rgb(255, 255, 255);
+      border: solid 1px ; 
+      border-color: rgb(255, 255, 255);
+      border-radius: 25px 25px 25px 25px;
+    }
+    .boton-imagen-principal.active {
+      background-color:  rgb(197, 185, 10);
+      border: solid 1px;
+      border-color:  rgb(197, 185, 10); 
+      border-radius: 25px 25px 25px 25px;
+    }
+    .boton-imagen-principal:hover {
+      background-color: rgb(197, 185, 10);
+      border: solid 5px;
+      border-color:  rgb(197, 185, 10); 
+    }
+/*************************/
+/*** SECCION DE TIENDA ***/
+/***********************/
+/* SECCION CONTENEDOR DE ITEMS */
+.contenedor-vinos .contenedor-items-vinos{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap:15px;
+  grid-row-gap: 20px;
+  width: 100%;
+  transition: .3s;
+}
+.contenedor-vinos .contenedor-items-vinos .item .titulo-item{
+  font-size: 10px;
+}
+.contenedor-vinos .contenedor-items-vinos .item .precio-item{
+  font-size: 16px;
+}
+.contenedor-vinos .contenedor-items-vinos .item .boton-item{
+  font-size: 10px;
+  margin: 10px auto;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.carrito-vinos .carrito-item .carrito-item-precio{
+  display:flex;
+}
+.carrito-vinos .carrito-item .btn-eliminar{
+  margin-top: 10%;
+}
+    /**************/
+    /*** VINOS ***/
+    /************/
+    .vinos h1{
+      color: white;
+      font-size: 2em;
+    }
+    .boton-vinos{
+     font-size: 10px;
+    }
+    /*****************************/
+    /*** ORGÁNICO CERTIFICADO ***/
+    /***************************/
+    #certificado {
+      max-height: 400px;
+    }
+    /***************/
+    /*** FOOTER ***/
+    /*************/
+    .fondo-footer p{
+      margin-top: 1em;
+    }
+    .logos-contacto-footer {
+      color:  rgb(94, 128, 0) ;
+      font-size: 1em;
+      transition: 0.5s ;
+    }
+    .logos-contacto-footer:hover {
+      transform: scale(1.2);
+      transition: 1s;
+    }
+    .logos-contacto-footer a{
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+    }
+    .logos-contacto-footer a:hover{
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: rgb(228, 194, 0);
+    }
+    .titulo-medios {
+      margin-right: 0em;
+    }
+    .logos-pagos img {
+      margin-top: 10px;
+    }
+    .fondoCopyright{
+      margin-bottom: -17px;
+      padding-top: 10px;
+      padding-bottom: 2px;
+    }
+    .fondoCopyright p{
+    margin-left: 2%;
+    margin-right: 2%;
+      font-size: 10px;
+    }
 }

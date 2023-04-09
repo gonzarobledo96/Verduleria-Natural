@@ -76,7 +76,7 @@ function hacerVisibleCarrito(){
     carrito.style.opacity = '1';
 
     var items =document.getElementsByClassName('contenedor-items-vinos')[0];
-    items.style.width = '60%';
+    items.style.width = '100%';
 }
 
 //Funciòn que agrega un item al carrito
@@ -130,27 +130,29 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
     //Actualizamos total
     actualizarTotalCarrito();
 }
+
+
+
 //Aumento en uno la cantidad del elemento seleccionado
 function sumarCantidad(event){
-    var buttonClicked = event.target;
-    var selector = buttonClicked.parentElement;
-    console.log(selector.getElementsByClassName('carrito-item-cantidad')[0].value);
-    var cantidadActual = selector.getElementsByClassName('carrito-item-cantidad')[0].value;
-    cantidadActual++;
-    selector.getElementsByClassName('carrito-item-cantidad')[0].value = cantidadActual;
-    actualizarTotalCarrito();
+  var buttonClicked = event.target;
+  var selector = buttonClicked.parentElement;
+  console.log(selector.getElementsByClassName('carrito-item-cantidad')[0].value);
+  var cantidadActual = parseInt(selector.getElementsByClassName('carrito-item-cantidad')[0].value); // Convertir el valor a un número
+  cantidadActual++;
+  selector.getElementsByClassName('carrito-item-cantidad')[0].value = cantidadActual; 
+  actualizarTotalCarrito();
 }
 //Resto en uno la cantidad del elemento seleccionado
 function restarCantidad(event){
-    var buttonClicked = event.target;
-    var selector = buttonClicked.parentElement;
-    console.log(selector.getElementsByClassName('carrito-item-cantidad')[0].value);
-    var cantidadActual = selector.getElementsByClassName('carrito-item-cantidad')[0].value;
-    cantidadActual--;
-    if(cantidadActual>=1){
-        selector.getElementsByClassName('carrito-item-cantidad')[0].value = cantidadActual;
-        actualizarTotalCarrito();
-    }
+  var buttonClicked = event.target;
+  var selector = buttonClicked.parentElement;
+  console.log(selector.getElementsByClassName('carrito-item-cantidad')[0].value);
+  var cantidadActual = parseInt(selector.getElementsByClassName('carrito-item-cantidad')[0].value);
+  if(cantidadActual>=1){
+      selector.getElementsByClassName('carrito-item-cantidad')[0].value = cantidadActual;
+      actualizarTotalCarrito();
+  }
 }
 
 //Elimino el item seleccionado del carrito
@@ -191,18 +193,10 @@ function actualizarTotalCarrito(){
         var precio = parseFloat(precioElemento.innerText.replace('$','').replace('.',''));
         var cantidadItem = item.getElementsByClassName('carrito-item-cantidad')[0];
         console.log(precio);
-        var cantidad = cantidadItem.value;
+        var cantidad = parseInt(cantidadItem.value);
         total = total + (precio * cantidad);
     }
     total = Math.round(total * 100)/100;
 
-    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
-
+    document.getElementsByClassName('carrito-precio-total')[0].innerText = '$' + total.toFixed(2).replace('.', ',');
 }
-
-
-
-// logo hamburguesa
-document.querySelector('.hamburger').addEventListener('click', (e) => {
-  e.currentTarget.classList.toggle('is-active');
-})

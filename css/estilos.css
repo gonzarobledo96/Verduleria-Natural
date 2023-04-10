@@ -371,8 +371,6 @@ height: 50px;
   padding-right: 20%;
   margin-bottom: 25px;
 }
-
-
 /******************************/
 /***FONDO-TIENDA-CERVEZAS***/
 /****************************/
@@ -784,6 +782,12 @@ transform: scale(1.1);
   }
 }
 @media screen and (min-width: 1094px) and (max-width: 1199px){
+      /******************************/
+/***FONDO-TIENDA-CERVEZAS***/
+/****************************/
+.tienda-fondo-cerveza{
+  height: 200px;
+}
     /****************************/
 /*** BARRA DE NAVEGACION ***/
 /**************************/
@@ -871,6 +875,12 @@ transform: scale(1.1);
       top: 20%;
       transform: translateY(-20%);
     }
+        /******************************/
+/***FONDO-TIENDA-CERVEZAS***/
+/****************************/
+.tienda-fondo-cerveza{
+  height: 200px;
+}
   /*************************/
 /*** SECCION DE TIENDA ***/
 /***********************/
@@ -958,6 +968,12 @@ transform: scale(1.1);
       top: 20%;
       transform: translateY(-20%);
     }
+        /******************************/
+/***FONDO-TIENDA-CERVEZAS***/
+/****************************/
+.tienda-fondo-cerveza{
+  height: 200px;
+}
   /*************************/
 /*** SECCION DE TIENDA ***/
 /***********************/
@@ -1038,6 +1054,12 @@ transform: scale(1.1);
       top: 20%;
       transform: translateY(-20%);
     }
+/******************************/
+/***FONDO-TIENDA-CERVEZAS***/
+/****************************/
+.tienda-fondo-cerveza{
+  height: 180px;
+}
   /*************************/
 /*** SECCION DE TIENDA ***/
 /***********************/
@@ -1136,7 +1158,12 @@ transform: scale(1.1);
   .carousel-caption p,h1{
     font-size: 1em;
   }
-  
+/******************************/
+/***FONDO-TIENDA-CERVEZAS***/
+/****************************/
+.tienda-fondo-cerveza{
+  height: 140px;
+}
   /*************************/
 /*** SECCION DE TIENDA ***/
 /***********************/
@@ -1211,6 +1238,9 @@ transform: scale(1.1);
     }
     .tienda-fondo{
       height: auto;
+    }
+    .tienda-fondo-cerveza{
+      height: 130px;
     }
     /******************************************/
     /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
@@ -1392,6 +1422,12 @@ transform: scale(1.1);
     .tienda-fondo{
       height: auto;
     }
+    .tienda-fondo-cerveza{
+      background:linear-gradient(90deg, rgba(0, 0, 0, 0.562) 100%, rgb(0, 0, 0) 100%),url("../imagenes/vinos/vinos-fondo.jpg");
+      background-size: cover;
+      background-position:center;
+      height: 80px;
+    }
     /******************************************/
     /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
     /****************************************/
@@ -1570,6 +1606,12 @@ transform: scale(1.1);
     }
     .tienda-fondo{
       height: auto;
+    }
+    .tienda-fondo-cerveza{
+      background:linear-gradient(90deg, rgba(0, 0, 0, 0.562) 100%, rgb(0, 0, 0) 100%),url("../imagenes/vinos/vinos-fondo.jpg");
+      background-size: cover;
+      background-position:center;
+      height: 80px;
     }
     /******************************************/
     /*** IMAGENES PRINCIPALES DE LA PAGINA ***/
@@ -1757,6 +1799,15 @@ transform: scale(1.1);
     .tienda-fondo{
       height: auto;
     }
+    /******************************/
+/***FONDO-TIENDA-CERVEZAS***/
+/****************************/
+.tienda-fondo-cerveza{
+  background:linear-gradient(90deg, rgba(0, 0, 0, 0.562) 100%, rgb(0, 0, 0) 100%),url("../imagenes/vinos/vinos-fondo.jpg");
+  background-size: cover;
+  background-position:center;
+  height: 60px;
+}
     /*************************/
     /*** SECCION DE VINOS ***/
     /***********************/

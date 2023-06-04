@@ -1,3 +1,3 @@
 # Verduleria-Natural
 
-![Descripción de la imagen](https://imgur.com/HzxEZhJ)
+![Descripción de la imagen](https://i.imgur.com/HzxEZhJ.jpg)
